@@ -1,5 +1,5 @@
 {% set name = "mffpy" %}
-{% set version = "0.5.8" %}
+{% set version = "0.5.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8827b5ca5722922a4b3f39ae3aa5894c81a109faccdcf4e6f7c4f4dcc53214ca
+  sha256: 0c26eaaf74925a76dfda9ee15403d3bc76f45ae18b85390113cf5d1af0ecd196
   patches:
     - setup.py.patch  # Fix dependency specification: https://github.com/BEL-Public/mffpy/pull/65
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: "A lean reader for EGI's MFF file format."
+  summary: A lean reader for EGI's MFF file format.
 
 extra:
   recipe-maintainers:
