@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0c26eaaf74925a76dfda9ee15403d3bc76f45ae18b85390113cf5d1af0ecd196
-  patches:
-    - setup.py.patch  # Fix dependency specification: https://github.com/BEL-Public/mffpy/pull/65
 
 build:
   noarch: python
