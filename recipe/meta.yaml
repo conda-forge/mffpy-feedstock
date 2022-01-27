@@ -1,5 +1,5 @@
 {% set name = "mffpy" %}
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fceaf59f5fccb26b6e8a0363579d27e53db547493af353737a24983d95dc012d
+  sha256: 29cb4c077e44b843f3b7108586ccba61095cd6330bc73590e45fb596e2c857c6
 
 build:
   noarch: python
