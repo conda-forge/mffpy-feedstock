@@ -23,6 +23,7 @@ requirements:
     - numpy >=1.15.1
     - pytz >=2019.2
     - deprecated >=1.2.12
+    - lxml >=4.8.0
 
 test:
   imports:
