@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@hoechenberger](https://github.com/hoechenberger/)
+* [@larsoner](https://github.com/larsoner/)
 
